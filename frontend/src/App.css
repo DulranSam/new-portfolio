@@ -1,47 +1,48 @@
+/* Import the Poppins font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 
+/* Global styles */
 * {
-  font-family: "Poppins", sans-serif; /* Added a generic sans-serif as a fallback */
+  word-spacing: 4px;
+  font-family: "Poppins", sans-serif;
   word-wrap: break-word;
   background-blend-mode: color-burn;
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+/* Images styles */
 img {
   height: 40vh;
 }
 
+/* Card styles */
 .card {
   margin: 5%;
   padding: 2%;
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Add some padding inside the card container */
+/* Container styles */
 .container {
-  /* background-image: url("./images/mainbackground.jpg");
-  background-size: cover; */
   background-color: white;
   color: black;
   padding: 2px 16px;
 }
 
-.projects {
-  padding-top: 3%;
-  justify-content: space-between;
-}
-
+/* Navigation styles */
 ul {
+  border-radius: 50px;
   list-style-type: none;
-  margin: 0;
+  margin: 5%;
   padding: 0;
   overflow: hidden;
   background-color: #333;
@@ -57,14 +58,14 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: 0.2s; /* Specify transition in seconds */
+  transition: 0.2s;
 }
 
 li a:hover {
   background-color: #111;
-  transition: 0.2s; /* Specify transition in seconds */
 }
 
+/* Section styles */
 .upper {
   margin: 1%;
   text-align: center;
@@ -76,14 +77,17 @@ li a:hover {
 }
 
 .bottom {
+  margin: 2%;
   padding: 1%;
 }
 
+/* Social media styles */
 .social {
   padding: 5%;
   justify-content: space-around;
 }
 
+/* Animation styles */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -93,6 +97,7 @@ li a:hover {
   }
 }
 
+/* Button styles */
 .button-17 {
   align-items: center;
   appearance: none;
@@ -127,6 +132,13 @@ li a:hover {
   width: auto;
   will-change: transform, opacity;
   z-index: 0;
+}
+
+/* Avatar styles */
+.avatar {
+  border-radius: 50%;
+  border: 2px solid #8000ff;
+  filter: drop-shadow(0 0 8px #ff5722);
 }
 
 .button-17:hover {
