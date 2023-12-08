@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif; /* Added a generic sans-serif as a fallback */
+  word-wrap: break-word;
+  /* background-color: black;
+  color: white; */
+}
+
+.card {
+  margin: 5%;
+  padding: 2%;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.projects {
+  padding-top: 10%;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.2s; /* Specify transition in seconds */
+}
+
+li a:hover {
+  background-color: #111;
+  transition: 0.2s; /* Specify transition in seconds */
+}
+
+.upper {
+  margin: 1%;
+  text-align: center;
+}
+
+.middle {
+  padding-top: 5%;
+  margin: 5%;
+}
+
+.bottom {
+  padding: 2%;
+}
+
+.social {
+  justify-content: space-around;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
