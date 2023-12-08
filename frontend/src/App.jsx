@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import Axios from "axios";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 import "./App.css";
 
 function App() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = (checked) => {
+    setDarkMode(checked);
+  };
+
   useEffect(() => {
     async function ApiCall() {
       try {
@@ -39,6 +46,13 @@ function App() {
             <a href="about.asp">About</a>
           </li>
         </ul>
+        <br></br>
+        <DarkModeSwitch
+          style={{ marginBottom: "2rem" }}
+          checked={isDarkMode}
+          onChange={toggleDarkMode}
+          size={40}
+        ></DarkModeSwitch>
         <div className="upper">
           <h1 style={{ margin: "5%" }}>Dulran Samarasinghe</h1>
           <label>
@@ -53,6 +67,7 @@ function App() {
             ></img>
           </label>
         </div>
+
         <div className="middle">
           <h1>Projects</h1>
           <p style={{ fontSize: "x-large" }}>
